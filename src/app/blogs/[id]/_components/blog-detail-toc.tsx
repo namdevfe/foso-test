@@ -165,6 +165,7 @@ interface BlogDetailTOCItemProps {
 const BlogDetailTOCItem = ({
   href,
   title,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   items = [],
   isActive = false,
   onClick
