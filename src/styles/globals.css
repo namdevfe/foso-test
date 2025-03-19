@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply max-w-[1920px] my-0 mx-auto font-raleway font-medium text-base text-blackCustom bg-whiteCustom overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .layout-container {
+    max-width: 1470px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      #54abb1 0%,
+      #54abb1 34%,
+      #85eeb3 52%,
+      #54abb1 100%
+    );
+    @apply bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-blue {
+    background: linear-gradient(
+      45deg,
+      #013da0 0%,
+      #0142a9 11%,
+      #0148b3 22%,
+      #024ebc 33%,
+      #0254c5 44%,
+      #025ace 56%,
+      #0261d7 67%,
+      #0267e1 78%,
+      #036eea 89%,
+      #0375f3 100%
+    );
+    /* @apply mix-blend-; */
+  }
+}

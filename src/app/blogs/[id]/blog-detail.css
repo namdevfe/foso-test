@@ -1,0 +1,73 @@
+.blog-detail-entry {
+}
+
+.blog-detail-entry img {
+  @apply w-full;
+}
+
+.blog-detail-entry a {
+  @apply flex mt-6;
+}
+
+.blog-detail-entry figcaption {
+  @apply mt-2 text-center text-[#667F93];
+}
+
+.blog-detail-entry blockquote {
+  @apply relative px-[61px] py-3 text-xl italic mt-2 text-center;
+}
+
+.blog-detail-entry blockquote:first-child::before {
+  @apply absolute top-0 left-0 content-[''] block w-[52px] h-6 bg-[url('/images/quote-icon.svg')] bg-contain bg-center bg-no-repeat;
+}
+
+.blog-detail-entry blockquote:not(:first-child) {
+  @apply py-3 pl-[34px] pr-4 border-l-[3px] border-[#15AA7A] border-solid;
+}
+
+.blog-detail-entry blockquote + blockquote {
+  @apply mt-6;
+}
+
+.blog-detail-entry h2,
+h3 {
+  @apply text-[#15AA7A];
+}
+
+.blog-detail-entry h2 {
+  @apply font-extrabold text-xl mt-3;
+}
+
+.blog-detail-entry h3 {
+  @apply font-bold mt-6;
+}
+
+.blog-detail-entry p {
+  @apply mt-5;
+}
+
+.blog-detail-entry h3 + p {
+  @apply mt-0;
+}
+
+.blog-detail-entry ul:first-child,
+.blog-detail-entry ul:not(:first-child) {
+  @apply mt-5 list-disc pl-4 text-[#231F20];
+}
+
+.blog-detail-entry ul:first-child {
+  @apply marker:text-[#15AA7A];
+}
+
+.blog-detail-entry ul:npt(:first-child) {
+  @apply marker:text-[#231F20];
+}
+
+.blog-detail-entry ul li span {
+  @apply text-[#15AA7A] font-bold;
+}
+
+/* Table of content */
+ul.blog-detail-toc > ul.blog-detail-toc {
+  @apply pl-[26px];
+}

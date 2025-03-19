@@ -1,0 +1,23 @@
+.breadcrumb {
+  @apply flex items-center text-[#050505];
+}
+
+.breadcrumb-item {
+  @apply text-sm flex items-center gap-[5px];
+}
+
+.breadcrumb-item:hover a {
+  @apply transition-colors duration-300;
+}
+
+.breadcrumb-item:hover a {
+  @apply text-primary;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  @apply pl-[5px];
+}
+
+.breadcrumb-item.--active {
+  @apply font-bold;
+}
